@@ -1,0 +1,124 @@
+name: application
+
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  share: any
+
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+
+  mvc_pattern: ^7.4.0
+
+  flutter_libphonenumber:
+  # libphonenumber: ^2.0.2
+  flutter_rounded_date_picker: ^3.0.4
+  image_picker: ^1.0.0
+  # file_picker: ^2.0.0
+  cached_network_image: ^3.2.0
+  mime_type: ^1.0.0
+  flutter_phoenix: ^1.1.1
+  simple_animations: ^5.0.2
+
+  # location: ^3.0.0
+  # geolocator: '6.2.1'
+  # map_launcher: ^0.4.4
+
+  flutter_html: any
+
+  firebase_messaging: ^15.2.4
+
+  firebase_core: ^3.12.1
+
+  # google_sign_in: 4.0.6 #current version 4.4.4, reason unable to build
+  # firebase_auth: 4.5.0
+  # flutter_facebook_login: ^3.0.0 <- incompatible with Dart 3, can replaced to flutter_login_facebook or flutter_facebook_auth (preferred)
+
+  local_auth: ^2.1.6
+  kakao_flutter_sdk: ^1.7.0
+  # kakao_flutter_sdk: ^1.2.2 #Kakao login (Android)
+  sign_in_with_apple: ^5.0.0
+  # flutter_naver_login: ^2.0.0 check later
+  # fluwx_no_pay_ww: ^1.0.4
+
+  dio: ^5.8.0+1
+
+  shared_preferences: ^2.0.13
+
+  get_it: ^7.6.0
+
+  json_serializable: any
+  json_annotation: ^4.6.0
+
+  provider: ^6.0.5
+
+  # barcode_scan: ^3.0.1
+  qr_code_scanner_plus: ^2.0.10+1
+  # qr_code_scanner: ^1.0.1
+  # qr_code_tools: ^0.0.7 (no longer maintained)
+  qr_flutter: ^4.0.0
+  # barcode_flutter: ^1.1.2 (no longer maintained)
+  selectable_autolink_text: ^2.3.0
+
+  enum_to_string: ^2.0.1
+  random_string: ^2.3.1
+  device_info_plus: ^11.0.0
+  firebase_analytics: ^11.4.4
+
+  # webview_flutter: ^1.0.7
+  # advance_pdf_viewer: ^2.0.1
+  advance_pdf_viewer2: ^2.0.5+1
+
+  # flutter_bloc: ^4.0.0
+  # equatable: ^1.2.0
+  webview_flutter_wkwebview: ^3.18.2
+
+  # fl_chart:
+  #   path: custom_plugins/fl_chart_master/
+  # equatable: ^1.2.0
+  # path_drawing: ^0.4.1
+
+  # panorama: ^0.0.2
+  # flutter_downloader: ^1.5.0
+  # flutter_bloc: ^4.0.0
+  # camera: ^0.5.8+2
+  # tflite: 1.1.1
+  url_launcher: ^6.1.6
+  fluttertoast: ^8.2.2
+  
+  flutter_app_badger: ^1.5.0
+  # flutter_windowmanager: ^0.2.0 (this needed)
+  grouped_list:
+  carousel_slider: 5.0.0
+  barcode_widget: ^2.0.4
+  devicelocale: ^0.6.0
+  # qr_code_utils: ^0.0.1
+  # scan: ^1.6.0 (this needed)
+  
+dependency_overrides:
+  analyzer: ^4.1.0
+  firebase_core_platform_interface: 4.8.0
+
+dev_dependencies:
+  flutter_test: 
+    sdk: flutter
+  
+  build_runner: ^2.1.2
+
+  flutter_launcher_icons: ^0.13.1
+  # flutter_launcher_name: "^0.0.1"
+  package_info_plus: ^8.3.0
+
+flutter:
+  uses-material-design: true
