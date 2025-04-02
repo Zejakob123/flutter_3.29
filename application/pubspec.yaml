@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  share: any
+  # share: any
 
   flutter_localizations:
     sdk: flutter
@@ -42,11 +42,11 @@ dependencies:
   # firebase_core: ^3.12.1
 
   # google_sign_in: 4.0.6 #current version 4.4.4, reason unable to build
-  # firebase_auth: 4.5.0
+  firebase_auth: 5.5.2
   # flutter_facebook_login: ^3.0.0 <- incompatible with Dart 3, can replaced to flutter_login_facebook or flutter_facebook_auth (preferred)
 
   local_auth: ^2.1.6
-  kakao_flutter_sdk: ^1.7.0
+  # kakao_flutter_sdk: ^1.7.0
   # kakao_flutter_sdk: ^1.2.2 #Kakao login (Android)
   sign_in_with_apple: ^6.1.4
   # flutter_naver_login: ^2.0.0 check later
@@ -95,7 +95,7 @@ dependencies:
   # camera: ^0.5.8+2
   # tflite: 1.1.1
   url_launcher: ^6.1.6
-  fluttertoast: 8.2.12
+  # fluttertoast: 8.2.12
   
   flutter_app_badger: ^1.5.0
   # flutter_windowmanager: ^0.2.0 (this needed)
