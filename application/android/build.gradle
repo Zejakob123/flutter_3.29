@@ -52,6 +52,26 @@ allprojects {
             }
           }
 
+          // Workaround for add namespace for android library for using Gradle 8+
+          if (project.plugins.hasPlugin('com.android.library')) {
+                  android {
+                      defaultConfig {
+                          def androidManifest = android.sourceSets.main.manifest.srcFile
+                          if (androidManifest.exists()) {
+                              def parsedManifest = new XmlParser().parse(androidManifest)
+                              def packageName = parsedManifest.attribute('package')
+
+                              if (packageName) {
+                                  namespace = packageName
+                              } else {
+                                  namespace = "com.kbtg.neobank.${project.name}"
+                              }
+                          }
+                      }
+                  }
+              }
+          
+
           // Ensure the task runs before the build process
           project.tasks.matching { it.name.startsWith("preBuild") }.all {
             dependsOn project.tasks.named("fixManifestsAndNamespace")
