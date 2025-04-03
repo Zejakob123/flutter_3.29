@@ -43,6 +43,14 @@ android {
     }
 }
 
+// https://stackoverflow.com/questions/79102777/how-to-resolve-source-value-8-is-obsolete-warning-in-android-studio
+// https://developer.android.com/build/jdks#toolchain
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 flutter {
     source = "../.."
 }
